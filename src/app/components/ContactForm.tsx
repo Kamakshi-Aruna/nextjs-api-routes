@@ -3,7 +3,6 @@
 import { useState, useOptimistic, startTransition } from "react";
 import {submitContact} from "@/app/optimistic/actions";
 
-
 interface Contact {
     id: number;
     name: string;
