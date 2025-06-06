@@ -28,11 +28,9 @@ export default function ContactForm() {
         // Reset form
         setFormData({ name: "", email: "", message: "" });
     }
-
     return (
         <div className="p-6 max-w-lg mx-auto bg-white rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-
             <form onSubmit={handleSubmit} className="space-y-4">
                 <input
                     type="text"
