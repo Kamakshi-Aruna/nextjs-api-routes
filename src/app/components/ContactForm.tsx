@@ -54,7 +54,6 @@ export default function ContactForm() {
                 />
                 <button type="submit" className="w-full p-2 bg-blue-600 text-white rounded">Submit</button>
             </form>
-
             <h3 className="mt-6 text-lg font-semibold">Recent Contacts</h3>
             <ul className="mt-2 space-y-2">
                 {optimisticContacts.map((contact) => (
