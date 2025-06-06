@@ -17,10 +17,8 @@ export default function ContactForm() {
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
         if (!formData.name || !formData.email || !formData.message) return;
-
         // Create the new optimistic contact
         const newContact: Contact = { id: Date.now(), ...formData };
-
         // Wrap the optimistic update inside `startTransition`
         startTransition(() => {
             setOptimisticContacts((prev) => [...prev, newContact]);
