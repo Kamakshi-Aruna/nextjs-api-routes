@@ -23,10 +23,8 @@ export default function ContactForm() {
         startTransition(() => {
             setOptimisticContacts((prev) => [...prev, newContact]);
         });
-
         // Call the Server Action
         await submitContact(newContact);
-
         // Reset form
         setFormData({ name: "", email: "", message: "" });
     }
